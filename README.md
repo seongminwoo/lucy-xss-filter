@@ -10,7 +10,6 @@ Lucy-XSS is an open source library of two defense modules to protect Web applica
 
 ## XssPreventer
 - Use the apache-common-lang3 library to prevent XSS attack.
-- 
   (https://commons.apache.org/proper/commons-lang/javadocs/api-3.1/org/apache/commons/lang3/StringEscapeUtils.html#escapeHtml4%28java.lang.String%29)
 
 - The difference with the XssFilter, It is a simple conversion of all strings as follows, so as not to be able to recognize the HTML tag.
