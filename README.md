@@ -1,5 +1,5 @@
 ## Lucy-XSS : XssFilter, XssPreventer  
-Lucy-XSS is an open source library of two defense modules to protect Web applications from XSS attacks. It supports the rule based security policy. The current default rule is Navercorp's standard. You can change the default rule if you want.
+Lucy-XSS is an open source library of two defense modules to protect Web applications from XSS attacks. It supports the white-list rule based security policy. The current default rule is Navercorp's standard. You can change the default rule if you want.
 
 ## XssFilter
 - Java-based library that supports the method of setting the white-list to protect the web application.
