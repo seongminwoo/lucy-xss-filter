@@ -1,5 +1,5 @@
 ## Lucy-XSS : XssFilter, XssPreventer  
-Lucy-XSS is an open source library of two defense modules to protect Web applications from XSS attacks. It supports the rule based security policy. Now the policy that Navercorp has is default.
+Lucy-XSS is an open source library of two defense modules to protect Web applications from XSS attacks. It supports the rule based security policy. The current default rule is Navercorp's standard. You can change the default rule if you want.
 
 ## XssFilter
 - Java-based library that supports the method of setting the white-list to protect the web application.
@@ -9,7 +9,7 @@ Lucy-XSS is an open source library of two defense modules to protect Web applica
 ![Lucy-XSS Filter structure.jpg](https://raw.githubusercontent.com/naver/lucy-xss-filter/master/docs/images/XssFilter_Structure.png)
 
 ## XssPreventer
-- Use the apache-common-lang3 library to prevent XSS attack.
+- Use the apache-common-lang library to prevent XSS attack.
   (https://commons.apache.org/proper/commons-lang/javadocs/api-3.1/org/apache/commons/lang3/StringEscapeUtils.html#escapeHtml4%28java.lang.String%29)
 
 - The difference with the XssFilter, It is a simple conversion of all strings as follows, so as not to be able to recognize the HTML tag.
@@ -26,9 +26,8 @@ Lucy-XSS is an open source library of two defense modules to protect Web applica
 - Use Xss Filter if you need to receive HTML tags for input. (eg:  mail, visitors' book,  message board service)
 
 ## Getting started
-we also offer an interactive tutorial for learning basic uses of Lucy-XSS.
+We also offer an interactive tutorial for learning basic uses of Lucy-XSS.
 See Docs for instructions on installing Luxy-xss.
-(Please wait. We are preparing for tutorial.)
 
 ## Usage examples
 * XssPreventer
@@ -44,7 +43,7 @@ public void testXssPreventer() {
 }
 ```
 
-* XssFilter : dom
+* XssFilter : DOM
 
 ``` java
 @Test
@@ -62,7 +61,7 @@ public void pairQuoteCheckOtherCase() {
 }
 ```
 
-* XssFilter : sax
+* XssFilter : SAX
 
 ``` java
 @Test
@@ -74,7 +73,7 @@ public void testSuperSetFix() {
 }
 ```
 
-For more information, please see ....doc 
+For more information, please see ....doc
 
 ## Contributing to Lucy
 Want to hack on Lucy-XSS? Awesome! There are instructions to get you started here.
