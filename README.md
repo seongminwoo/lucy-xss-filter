@@ -3,7 +3,7 @@ Lucy-XSS is an open source library of two defense modules to protect Web applica
 
 ## XssFilter
 - Java-based library that supports the method of setting the white-list to protect the web application.
-- If you use the White-List method, It is possible to provide a secure Web services than if you use the existing filter that uses the blacklist method.
+- If you use the White-List method, It is possible to provide a secure Web services than if you use the existing filter that uses the black-list method.
 - Support for both DOM and SAX.
 
 ![Lucy-XSS Filter structure.jpg](https://raw.githubusercontent.com/naver/lucy-xss-filter/master/docs/images/XssFilter_Structure.png)
