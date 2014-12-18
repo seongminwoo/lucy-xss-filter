@@ -28,7 +28,6 @@ Lucy-XSS is an open source library of two defense modules to protect Web applica
 ## Getting started
 we also offer an interactive tutorial for learning basic uses of Lucy-XSS.
 See Docs for instructions on installing Luxy-xss.
-(Please wait. We are preparing for tutorial.)
 
 ## Usage examples
 * XssPreventer
