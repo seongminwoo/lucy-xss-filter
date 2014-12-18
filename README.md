@@ -9,7 +9,7 @@ Lucy-XSS is an open source library of two defense modules to protect Web applica
 ![Lucy-XSS Filter structure.jpg](https://raw.githubusercontent.com/naver/lucy-xss-filter/master/docs/images/XssFilter_Structure.png)
 
 ## XssPreventer
-- Use the apache-common-lang library to prevent XSS attack.
+- Use the apache-common-lang3 library to prevent XSS attack.
 - Simply convert all input string as follows so it can't be recognized as HTML tags on web browser.
 
 ```
@@ -20,7 +20,7 @@ Lucy-XSS is an open source library of two defense modules to protect Web applica
 ```
 > https://commons.apache.org/proper/commons-lang/javadocs/api-3.1/org/apache/commons/lang3/StringEscapeUtils.html#escapeHtml4%28java.lang.String%29
 
-## Selection criteria of the XssFilter and XssPreventer
+## XssFilter VS XssPreventer
 - Simple text parameter other than HTML should be filtered using the XssPreventer.
 - Use Xss Filter if you need to receive HTML tags for input. (eg:  mail, visitors' book,  message board service)
 
