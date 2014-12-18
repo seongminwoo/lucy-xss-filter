@@ -1,5 +1,5 @@
 ## Lucy-XSS : XssFilter, XssPreventer  
-Lucy-XSS to provide a defense module of two ways to protect Web applications from XSS attacks. Using the Lucy-XSS Filter, it is possible to apply the security policy of the standard. Of course if you want, it is possible to change the standard of the company. (The current default standard is Navercorp.)
+Lucy-XSS is an open source library of two defense modules to protect Web applications from XSS attacks. It supports the rule based security policy. Now the policy that Navercorp has is default.
 
 ## XssFilter
 - Java-based library that supports the method of setting the white-list to protect the web application.
@@ -9,8 +9,9 @@ Lucy-XSS to provide a defense module of two ways to protect Web applications fro
 ![Lucy-XSS Filter structure.jpg](https://raw.githubusercontent.com/naver/lucy-xss-filter/master/docs/images/XssFilter_Structure.png)
 
 ## XssPreventer
-- Use the apache-common-lang library to prevent XSS attack.
-- The difference between the XssFilter, It is a simple conversion of all strings as follows, so as not to be able to recognize the HTML tag.
+- Use the apache-common-lang3 library to prevent XSS attack.
+  (https://commons.apache.org/proper/commons-lang/javadocs/api-3.1/org/apache/commons/lang3/StringEscapeUtils.html#escapeHtml4%28java.lang.String%29)
+- The difference with the XssFilter, It is a simple conversion of all strings as follows, so as not to be able to recognize the HTML tag.
 
 ```
 < → &lt; 
@@ -21,11 +22,12 @@ Lucy-XSS to provide a defense module of two ways to protect Web applications fro
 
 ## Selection criteria of the XssFilter and XssPreventer
 - Simple text parameter other than HTML should be filtered using the XssPreventer.
-- If html tag is required to user-entered data you need to use the XssFilter. (ex:  mail, visitors' book,  message board service)
+- Use Xss Filter if you need to receive HTML tags for input. (eg:  mail, visitors' book,  message board service)
 
 ## Getting started
-We also offer an interactive tutorial for quickly learning the basics of using Lucy-XSS.
-For up-to-date install instructions, see the Docs.
+we also offer an interactive tutorial for learning basic uses of Lucy-XSS.
+See Docs for instructions on installing Luxy-xss.
+(Please wait. We are preparing for tutorial.)
 
 ## Usage examples
 * XssPreventer
@@ -71,11 +73,12 @@ public void testSuperSetFix() {
 }
 ```
 
-For more information, please see ....doc
+For more information, please see ....doc 
 
 ## Contributing to Lucy
 Want to hack on Lucy-XSS? Awesome! There are instructions to get you started here.
 They are probably not perfect, please let us know if anything feels wrong or incomplete.
+(Please wait. We are preparing for contribution guide.)
 
 ## Licensing
 Lucy is licensed under the Apache License, Version 2.0. See LICENSE for full license text.
